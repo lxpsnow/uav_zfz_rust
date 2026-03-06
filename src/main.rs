@@ -21,7 +21,7 @@ async fn main() -> std::io::Result<()> {
         url
     },
     Err(_) => {
-        let default_url = "mysql://uav:rZeNrPmWE6HasMwE@106.14.147.164:3306/uav?ssl-mode=DISABLED".to_string();
+        let default_url = "mysql://uav:rZeNrPmWE6HasMwE@192.168.96.171:3306/uav?ssl-mode=DISABLED".to_string();
         println!("未找到 DATABASE_URL 环境变量，使用默认连接: {}", default_url);
         default_url
     }
